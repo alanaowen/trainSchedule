@@ -24,7 +24,7 @@
     var newTrain = {
     	name: trainName,
     	destination:, destination,
-    	firstTrain: firstTrainMoment,
+    	firstTrain: firstTrain,
     	frequency: frequency
     };
   // talk to firebase and upload new train
@@ -33,7 +33,7 @@
   // clear forms
      $("#name-input").val("");
      $("#destination-input").val("");
-     $("#time-input").val("");
+     $("#first-input").val("");
      $("#frequency-input").val("");
 
   })
