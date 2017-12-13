@@ -17,7 +17,7 @@
   // get info
     var trainName = $("#name-input").val().trim();
     var destination = $("#destination-input").val().trim();
-    var firstTrainMoment = moment($("#first-input").val().trim(), "HH:mm").subtract(2, "minutes").format("X");
+    var firstTrainMoment = moment($("#first-input").val().trim(), "HH:mm").subtract(6, "minutes").format("X");
     var frequency = $("#frequency-input").val().trim();
 
   // object to hold train data
@@ -28,7 +28,7 @@
     	frequency: frequency
     }
   // talk to firebase and upload new train
-    database.ref("/trains").push(newTrain);
+    database.ref().push(newTrain);
 
   // clear forms
      $("#name-input").val("");
