@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Express Train to HELL</title>
+    <!-- Bootstrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+      <!-- Stylesheets -->
+     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+         
+</head>
+
+<body>
+  <div class="container">
+  	<div class="jumbotron">
+  	  <h1 class="text-center"> Express Train to HELL</h1>
+  	</div>
+
+  	<div class="panel panel-danger">
+            <div class="panel-heading">Express Train to HELL Schedule
+            </div>
+            <!-- this is where we'll create our buttons -->
+            <div class="panel-body">
+            	<div class="">
+                    <table class="table table-responsive" id="data">
+                          <tr>
+                            <th>Demonic Train Name</th>
+                            <th></th>
+                            <th>Hellish Destination</th>
+                            <th>Frequency (min)</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                          </tr>
+                    </table>
+                </div>
+            </div>
+         </div>
+       
+        <div class="panel panel-danger">
+            <div class="panel-heading">Add New Demonic Train
+            </div>
+
+            <form role="form">
+                    <div class="form-group">
+                        <label>Demonic Train Name</label>
+                        <input type="text" class="form-control" id="name-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Hellish Desination</label>
+                        <input type="text" class="form-control" id="destination-input">
+                    </div>
+                    <div class="form-group">
+                        <label>First Train Time (HH:mm - military time)</label>
+                        <input type="text" class="form-control" id="time-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Frequency (min)</label>
+                        <input type="text" class="form-control" id="frequency-input">
+                    </div>
+                    <button type="button" class="btn" id="addTrainBtn">Add New Train</button>
+            </form>
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+     <script type="text/javascript" src="assets/javascript/logic.js"></script>  
+</body>
+
+</html>
